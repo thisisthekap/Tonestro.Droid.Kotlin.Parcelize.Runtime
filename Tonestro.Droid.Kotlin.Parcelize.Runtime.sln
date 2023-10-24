@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Droid.Kotlin.Parcelize.Runtime", "Tonestro.Droid.Kotlin.Parcelize.Runtime\Tonestro.Droid.Kotlin.Parcelize.Runtime.csproj", "{97DD591D-50C1-4C6A-AF91-C0A0F1517662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Droid.Kotlin.Android.Extensions.Runtime", "Tonestro.Droid.Kotlin.Android.Extensions.Runtime\Tonestro.Droid.Kotlin.Android.Extensions.Runtime.csproj", "{CD634948-B8CB-4784-B675-6BCC9061F878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97DD591D-50C1-4C6A-AF91-C0A0F1517662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DD591D-50C1-4C6A-AF91-C0A0F1517662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DD591D-50C1-4C6A-AF91-C0A0F1517662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DD591D-50C1-4C6A-AF91-C0A0F1517662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD634948-B8CB-4784-B675-6BCC9061F878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD634948-B8CB-4784-B675-6BCC9061F878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD634948-B8CB-4784-B675-6BCC9061F878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD634948-B8CB-4784-B675-6BCC9061F878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
