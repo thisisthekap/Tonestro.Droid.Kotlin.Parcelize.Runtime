@@ -26,6 +26,10 @@ steps:
     fi
 
 - bash: |
+    msbuild /t:Restore
+  displayName: Restore Solution
+
+- bash: |
     cd Tonestro.Droid.Kotlin.Android.Extensions.Runtime
     msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
