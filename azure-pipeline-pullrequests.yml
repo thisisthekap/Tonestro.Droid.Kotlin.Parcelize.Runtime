@@ -2,13 +2,17 @@ pr:
   - master
 
 pool:
-  vmImage: 'macOS-11'
+  vmImage: 'macOS-13'
 
 steps:
 
 - bash: |
     echo "##vso[build.updatebuildnumber]pullrequests-xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
   displayName: Set Build Number
+
+- bash: |
+    msbuild /t:Restore
+  displayName: Restore Solution
 
 - bash: |
     cd Tonestro.Droid.Kotlin.Android.Extensions.Runtime
@@ -23,7 +27,3 @@ steps:
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
   displayName: "Tonestro.Droid.Kotlin.Parcelize.Runtime: Build Release Nuget"
-
-- bash: |
-    msbuild /t:Restore
-  displayName: Restore Solution
