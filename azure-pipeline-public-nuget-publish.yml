@@ -6,7 +6,7 @@ trigger:
 pr: none
 
 pool:
-  vmImage: 'macOS-11'
+  vmImage: 'macOS-13'
 
 variables:
   - group: nuget.org
@@ -56,7 +56,7 @@ steps:
     target: '$(Build.SourceVersion)'
     tagSource: 'userSpecifiedTag'
     tag: '$(Build.SourceBranchName)'
-    title: 'Xamarin.RevenueCat.Android $(bindingsVersion)'
+    title: 'Tonestro.Droid.Kotlin.Parcelize.Runtime $(bindingsVersion)'
     assets: 'nugetoutput/Tonestro.Droid.Kotlin.*.nupkg'
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'issueBased'
